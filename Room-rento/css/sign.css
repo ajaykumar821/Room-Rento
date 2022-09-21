@@ -1,0 +1,245 @@
+/* css reset  */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navigation bar  */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+    font-family: 'Sansita Swashed', cursive; 
+}
+
+/* navigation bar logo and image  */
+
+#logo{
+margin: 10px 30px;
+}
+#logo img{
+    margin: 10px;
+    height: 90px;
+    width: 90px;
+
+}
+/* navigation bar list styling */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+content: "";
+background-color: rgb(110, 102, 102);
+position: absolute;
+height: 100%;
+width: 100%;
+top: 0px;
+left: 0px;
+z-index: -1;
+opacity: 0.9;
+}
+
+#navbar ul li{
+list-style: none;
+font-size: 1.2rem;
+
+}
+#navbar ul li a{
+    color: black;
+display: block;
+padding: 3px 20px;
+text-decoration: none;
+border-radius: 10px;
+
+}
+#navbar ul li a:hover{
+    color: red;
+    background-color: white;
+
+}
+
+/* home section  */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 180px;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+    }
+ #home::before{
+    content: "";
+    position: absolute;
+    background:url('../room1.jpg') no-repeat center center/cover;
+    height: 65%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.50;
+      } 
+
+ #home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Sansita Swashed', cursive; 
+}
+
+#home p{
+    color: slategrey;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+}
+      /* utility classes */
+
+      .primary{
+        
+          font-size: 3.8rem;
+          padding: 14px;
+          font-family: 'Sansita Swashed', cursive;
+      }
+
+        .secondary{
+            font-size: 2.8rem; ;
+            padding: 10px;
+            font-family: 'Sansita Swashed', cursive;
+            color: black;
+        }
+
+        .secondary:hover{
+            color: black;
+            background-color: rgb(231, 209, 223);
+            border-radius: 10px;
+            border: 1px solid black;
+
+        }   
+
+      .btn{
+          padding: 6px 20px;
+          border: 2px solid white;
+          background-color: rgb(218, 186, 215);
+          color: black;
+          margin: 20px;
+          border-radius: 9px;
+          font-size: 1.5rem;
+          cursor: pointer;
+      }
+      .btn:hover{
+          background-color:rgb(235, 160, 227);
+      }
+
+      /* services section  */
+      #services{
+          margin: 34px;
+          display: flex;
+      }
+      
+       #services .box{ 
+          border: 2px solid brown;
+          padding: 30px;
+          padding: 30px;
+          margin: 25px 10px;
+          border-radius: 20px;
+          background: #f2f2f2; 
+         
+      }
+      #services .box img{
+          height: 160px;
+          display: block;
+          margin: auto;
+
+      }
+      #services .box p{
+        font-family: 'Sansita Swashed', cursive;
+        font-size: 1.2rem;
+      }
+
+      /* clients section  */
+
+      #client-section{
+               
+               position: relative;
+               
+     }
+      #client-section::before{
+       content: "";
+       position: absolute;
+       background: url('../r1.jpg') no-repeat center center/cover; 
+       width: 100%;
+       height: 96%;
+       z-index: -1;
+       opacity: 0.6;
+     }
+     #clients{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     
+     .client-item{
+         padding: 12px;
+     }
+     
+     /* contact section  */
+
+    .p{
+        padding: 9px 670px;
+        font-size: 2.9rem;
+        font-family: 'Sansita Swashed', cursive;
+    }
+
+
+     #contact{
+         position: relative;
+     }
+     #contact::before{
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         z-index: -1;
+         opacity: 0.8;
+         background: url('../contact.jpg') no-repeat center center/cover;
+     }
+
+     #contact-box{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding-bottom: 36px;
+     }
+     #contact-box input,#contact-box textarea{
+         width: 100%;
+         padding: 0.5rem;
+         border-radius: 9px;
+         font-size: 1.2rem;
+     }
+
+     #contact-box form{
+         width: 40%;
+     }
+
+     #contact-box label{
+         font-size: 1.5rem;
+         font-family: 'Sansita Swashed', cursive;
+     }
+
+     footer{
+         background: black;
+         color: white;
+         padding: 9px 380px;
+         opacity: 0.8;
+         
+     }
+     

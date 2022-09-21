@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/owner.css">
+    <link rel="icon" href="img/a1.jpeg" type="img">
+    <title>Owner details | roomrento.com</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="headline">
+            <h1>Fill the details</h1>
+        </div>
+        <div class="ownerDetails">
+            <div class="form-group">
+                <label for="name" class="label">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter full name" required="">
+            </div>
+            <div class="form-group">
+                <label for="name" class="label">Contact No.</label>
+                <input type="tel" name="contactno" id="contactno" placeholder="Enter Contact Number" required="">
+            </div>
+            <div class="form-group">
+                <label for="name" class="label">City</label>
+                <input type="text" name="city" id="city" placeholder="Enter City" required="">
+            </div>
+            <div class="form-group">
+                <label for="name" class="label">Home Type</label>
+                <input type="text" name="hometype" id="hometype" placeholder="Enter home tpye" required="">
+            </div>
+            <div class="form-group">
+                <label for="name" class="label">Size (in sq.ft)</label>
+                <input type="number" name="size" id="size" placeholder="Enter room size" required="">
+            </div>
+            <div class="form-group">
+                <label for="name" class="label">Lease Tpye</label>
+                <input type="text" name="lease" id="lease" placeholder="Enter lease type" required="">
+            </div>
+            <div class="form-group">
+                <label for="name" class="label">Floor Number(Optional)</label>
+                <input type="number" name="floor" id="floor" placeholder="Enter floor number">
+            </div>
+            <div class="form-group">
+                <label for="name" class="label">Parking(if available)</label>
+                <input type="text" name="parking" id="parking" placeholder="if available">
+            </div>
+            <div class="form-group">
+                <label for="name" class="label">Address</label>
+                <textarea name="address" id="address" cols="83" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="name" class="label">Landmark(Optional)</label>
+                <input type="text" name="landmark" id="landmark" placeholder="enter landmark (optional)">
+            </div>
+            <div class="form-group">
+                <label for="name" class="label">Description</label>
+                <textarea name="desc" id="desc" cols="83" rows="8"></textarea>
+            </div>
+        </div> <br> <br>
+        <div class="charges">
+            <div class="headline">
+                <h2>Price and Charges</h2>
+            </div>
+            <div class="form-group">
+                <label for="name" class="label">Home Price</label>
+                <input type="number" name="price" id="" placeholder="Enter home price" required="">
+            </div><br>
+            <div class="bill">
+                <input type="radio" name="elec" value="elecW" class="elec">with Electricity Bill
+                <input type="radio" name="elec" value="elecWt" class="elec">Without Electricity Bill
+            </div><br><br>
+            <div class="form-group">
+                <label for="name" class="label">Security Charge(optional)</label>
+                <input type="number" name="security" id="security" placeholder="Enter Security charge" required="">
+            </div>
+            <div class="form-group">
+                <label for="name" class="label">Brokerage Charge(optional)</label>
+                <input type="number" name="brokerage" id="brokerage" placeholder="Enter brokerage charge" required="">
+            </div>
+            <div class="form-group">
+                <label for="name" class="label">Maintenance Charge(optional)</label>
+                <input type="number" name="maintenance" id="maintenance" placeholder="Enter maintenance charge"
+                    required="">
+            </div>
+        </div>
+        <div class="images">
+            <div class="headline">
+                <h2>Add images for home</h2>
+            </div>
+            <div class="form-group">
+                <label for="name" class="label">Room</label>
+                <input type="file" name="image" class="file-upload-input" id="room" onchange="readURL(this)" accept="Image/*">
+            </div>
+            <div class="form-group">
+                <label for="name" class="label">Another room</label>
+                <input type="file" name="image" class="file-upload-input" id="room" onchange="readURL(this)" accept="Image/*">
+            </div>
+            <div class="form-group">
+                <label for="name" class="label">Kitchin(If available)</label>
+                <input type="file" name="image" class="file-upload-input" id="kitchin" onchange="readURL(this)" accept="Image/*">
+            </div>
+            <div class="form-group">
+                <label for="name" class="label">Bathroom</label>
+                <input type="file" name="image" class="file-upload-input" id="bathroom" onchange="readURL(this)" accept="Image/*">
+            </div>
+            <div class="form-group">
+                <label for="name" class="label">Balcony(If available)</label>
+                <input type="file" name="image" class="file-upload-input" id="balcony" onchange="readURL(this)" accept="Image/*">
+            </div>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+    </div>
+</body>
+</html>
